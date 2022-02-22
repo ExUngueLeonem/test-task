@@ -1,0 +1,161 @@
+@import "fonts";
+
+
+/* обнуление стилей */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: 21px;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* ======================== */
+
+/* переменные */
+$minWidth: 320px;
+$maxWidth: 1920;
+$maxWidthContainer: 1141;
+$md1: $maxWidthContainer+12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479398;
+
+$gradient: linear-gradient(135deg, rgba(255, 158, 23, 1) 0%, rgba(255, 158, 23, 1) 40%, rgba(255, 43, 60, 1) 60%, rgba(255, 43, 60, 1) 100%);
+/* ======================== */
+
+body {
+    font-family: heresy;
+    font-size: 50px;
+    background-color: #f9f9ff;
+}
+
+.wrapper {
+    max-width: $maxWidth + px;
+    margin: 0 auto;
+}
+
+.page-content-wrapper {
+/*     max-width: $maxWidthContainer + px;
+ */}
+
+
+.main-section {
+    background: url('@img/background_1.png') no-repeat right top;
+    height: 900px;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    padding-top: 36px;
+
+    &__logo-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    &__logo-title {
+        font-size: 19px;
+    }
+}
+
+.main-content {
+    border: dashed 1px red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background: url('@img/Smoke.png') repeat-x bottom;
+    &__Iphone {
+/*         width: 50%;
+ */        display: flex;
+        align-items: center;
+    }
+}
+
+.Iphone {
+    position: relative;
+    border-radius: 55px;
+    box-shadow: 0px 0px 57px 15px rgba(0, 0, 0, 0.21);
+
+    &__mann {
+        display: block;
+        position: absolute;
+        transform: translateY(-50%) translateX(-50%);
+        top: 50%;
+        left: 50%;
+    }
+}
+
+.info {
+    &__title {
+        font-size: 51px;
+    }
+
+    &__title::after {
+        content: '';
+        display: block;
+        background: $gradient;
+        width: 112px;
+        height: 3px;
+        transform: translateX(-35px);
+
+        margin: 36px 0;
+    }
+
+    &__content {
+        width: 560px;
+    }
+
+    &__button {
+        margin: 41px 0;
+    }
+
+    &__check {
+    }
+}
+
+.check-box {
+    margin: auto 0;
+    color: #878787;
+    &__check {
+        /* выставить позицию для чекбокса */
+        /*  стилизовать чекбокс отдельно */
+    }
+    &__text {
+        display: inline-block;
+        width: 420px;
+    }
+}
+
+.button-primary {
+    border-radius: 35px;
+    background: $gradient;
+    width: 240px;
+    height: 70px;
+    color: #fff;
+}
+
+
+
+
+@media (max-width: 768px) {
+    span {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: green;
+    }
+}

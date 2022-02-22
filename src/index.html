@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+"title": "Главная"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html', {})
+        <main class="page-content-wrapper">
+
+            <section class="main-section">
+                <div class="main-header">
+                    <img src="@img/logo/icon.jpg" alt="logo-icon" class="main-header__logo-icon">
+                    <span class="main-header__logo-title">Печать ереси</span>
+                </div>
+                <div class="main-content">
+
+                    <div class="main-content__info info">
+                        <div class="info__title">
+                            Печать ереси WEB SDK
+                        </div>
+                        <div class="info__content">
+                            Сделай селфи и узнай, насколько ты еретик
+                            <br><br>
+                            Умная система биометрии проверит
+                            энергитические поля, проведет анализ
+                            ауры и выдаст рекомендации к очищению.
+                        </div>
+                        <button class="info__button button-primary">
+                            Провериться
+                        </button>
+                        <div class="info__check check-box">
+                            <label>
+                                <input type="checkbox" name="agree" id="qwe" class="check-box__check">
+                            </label>
+                            <div class="check-box__text">
+                                Я согласен гореть в пламени инквизиции в случае
+                                высокого уровня ереси в крови
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-content__Iphone">
+                        <div class="Iphone">
+                            <img src="@img/Iphone.png" alt="Iphone">
+                            <img src="@img/men_in_phone.png" alt="mann" class="Iphone__mann">
+                        </div>
+                    </div>
+
+                </div><!-- /main-content -->
+            </section>
+        </main>
+    </div>
+    @@include('html/footer.html', {})
+</body>
+
+</html>
