@@ -74,7 +74,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding-top: 36px;
+    padding: 36px 0;
+
+    background: rgba(255, 255, 255, 0.527);
+    border-radius: 1em;
+    padding: 5px 15px;
+
+    max-width: 150px;
+
 
     &__logo-icon {
         width: 32px;
@@ -121,6 +128,11 @@ body {
 .info {
     &__title {
         font-size: 51px;
+        background: rgba(255, 255, 255, 0.527);
+        border-radius: 1em;
+        padding: 0 20px;
+        padding-top: 0.5em;
+
     }
 
     &__title::after {
@@ -136,6 +148,11 @@ body {
 
     &__content {
         max-width: 560px;
+        background: rgba(255, 255, 255, 0.527);
+        border-radius: 1em;
+        padding: 0 20px;
+        padding-top: 1em;
+
     }
 
     &__button {
@@ -194,6 +211,9 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+
+    &__title {
         align-items: center;
     }
 
@@ -213,6 +233,7 @@ body {
 .history-achievements {
     padding-right: 55px;
     width: 140px;
+    margin-right: 40px;
 
     &__num {
         font-family: PlayfairDisplay-Black;
@@ -357,9 +378,29 @@ body {
     }
 }
 
-@media (max-width: 768px) {
-    body {
-        /*         background-color: green;
- */
+@media (max-width: 480px) {
+    .head-section__inner {
+            justify-content: center;
+    }
+}
+
+@media (max-width: 911px) {
+    .main-content {
+        justify-content: center;
+    }
+    .Iphone {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 1025px) {
+    .head-section__inner, .achievements-block{
+       justify-content: center;
+    }
+}
+
+@media (max-width: 1130px) {
+    .achievements-block{
+       justify-content: center;
     }
 }
