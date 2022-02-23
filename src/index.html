@@ -7,9 +7,8 @@
 <body>
     <div class="wrapper">
         @@include('html/header.html', {})
-        <main class="page-content-wrapper">
-
-            <section class="main-section">
+        <section class="main-section">
+            <div class="_container">
                 <div class="main-header">
                     <img src="@img/logo/icon.jpg" alt="logo-icon" class="main-header__logo-icon">
                     <span class="main-header__logo-title">Печать ереси</span>
@@ -47,11 +46,146 @@
                             <img src="@img/men_in_phone.png" alt="mann" class="Iphone__mann">
                         </div>
                     </div>
+                </div>
 
-                </div><!-- /main-content -->
-            </section>
-        </main>
-    </div>
+            </div><!-- /main-content -->
+        </section>
+        <section class="deserts-section">
+            <div class="_container">
+                <div class="head-section">
+                    <div class="head-section__inner">
+                        <div class="title-achievements">
+                            Снижаем уровень
+                            ереси с XIII века.
+                        </div>
+
+                        <div class="history-achievements">
+                            <div class="history-achievements__num">
+                                1478
+                            </div>
+                            <div class="history-achievements__text">
+                                Год основания компании
+                                в Европе
+                            </div>
+                        </div>
+
+                        <div class="history-achievements">
+                            <div class="history-achievements__num">
+                                3687
+                            </div>
+                            <div class="history-achievements__text">
+                                Клиентов
+                                довольны
+                                нами
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievements-block">
+                    <div class="achievements-block__inner">
+                        <div class="achievements-block__icon">
+                            <img src="@img/icons/1.png" alt="">
+                        </div>
+                        <div class="achievements-block__content">
+                            <span class="achievements-block__title">
+                                Точность и технологии
+                            </span>
+                            <br><br>
+                            <span class="achievements-block__text">
+                                Наша уникальная технология анализа основана на вере
+                                и глубоких убеждениях, что гарантирует стабильность
+                                и достоверность результатов.
+                                <br><br>
+                                Точность результата оценивается в 146% всеми
+                                Проповедниками нашего культа.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="achievements-block__inner">
+                        <div class="achievements-block__icon">
+                            <img src="@img/icons/2.png" alt="">
+                        </div>
+                        <div class="achievements-block__content">
+                            <span class="achievements-block__title">
+                                Точность и технологии
+                            </span>
+                            <br><br>
+                            <span class="achievements-block__text">
+                                Наша уникальная технология анализа основана на вере
+                                и глубоких убеждениях, что гарантирует стабильность
+                                и достоверность результатов.
+                                <br><br>
+                                Точность результата оценивается в 146% всеми
+                                Проповедниками нашего культа.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="achievements-block__inner">
+                        <div class="achievements-block__icon">
+                            <img src="@img/icons/3.png" alt="">
+                        </div>
+                        <div class="achievements-block__content">
+                            <span class="achievements-block__title">
+                                Точность и технологии
+                            </span>
+                            <br><br>
+                            <span class="achievements-block__text">
+                                Наша уникальная технология анализа основана на вере
+                                и глубоких убеждениях, что гарантирует стабильность
+                                и достоверность результатов.
+                                <br><br>
+                                Точность результата оценивается в 146% всеми
+                                Проповедниками нашего культа.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="achievements-block__inner">
+                        <div class="achievements-block__icon">
+                            <img src="@img/icons/4.png" alt="">
+                        </div>
+                        <div class="achievements-block__content">
+                            <span class="achievements-block__title">
+                                Точность и технологии
+                            </span>
+                            <br><br>
+                            <span class="achievements-block__text">
+                                Наша уникальная технология анализа основана на вере
+                                и глубоких убеждениях, что гарантирует стабильность
+                                и достоверность результатов.
+                                <br><br>
+                                Точность результата оценивается в 146% всеми
+                                Проповедниками нашего культа.
+                            </span>
+                        </div>
+                    </div>
+                </div><!-- end achievements-block -->
+
+            </div><!-- end _container -->
+        </section><!-- end deserts-section -->
+
+        <section class="form-section">
+            <div class="_container">
+                <div class="form-section__form-container">
+                    <form class="order-form" action="">
+                        <div class="order-form__title">
+                            <h3 class="order-form__title-h1">форма заявки</h3>
+                            <h4 class="order-form__title-h2">Заказать очищение</h4>
+                        </div>
+                        <input class="order-form__input-text name" type="text" name="" id="" placeholder="ваше ФИО">
+                        <input class="order-form__input-text mail" type="text" name="" id="" placeholder="E-mail">
+                        <input class="order-form__input-text phone" type="text" name="" id="" placeholder="Телефон">
+                        <button class="info__button button-primary">
+                            Отправить
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div><!-- end wrapper -->
     @@include('html/footer.html', {})
 </body>
 
