@@ -10,8 +10,9 @@
 }
 
 div {
-/*     box-sizing: border-box;
- */}
+    /*     box-sizing: border-box;
+ */
+}
 
 button {
     padding: 0;
@@ -27,7 +28,7 @@ button {
 /* переменные */
 $minWidth: 320px;
 $maxWidth: 1920;
-$maxWidthContainer: 1141 + 12;
+$maxWidthContainer: 1141+12;
 $md1: $maxWidthContainer+12;
 $md2: 991.98;
 $md3: 767.98;
@@ -260,7 +261,9 @@ body {
 /* ============================= */
 
 .form-section {
-    height: 745px;
+    max-height: 745px;
+    background: url('@img/bg_form.png') left no-repeat; 
+
     &__form-container {
         display: flex;
         justify-content: end;
@@ -269,13 +272,34 @@ body {
 
 .order-form {
     width: 610px;
+    text-align: center;
+    padding-top: 130px;
     &__title {
+        text-align: center;
     }
 
     &__title-h1 {
+        margin: 0 auto;
+        font-size: 22px;
+        background: #fff;
+        border-radius: 25px;
+        max-width: 160px;
     }
 
     &__title-h2 {
+        margin-top: 24px;
+        padding-top: 12px;
+        font-size: 48px;
+        background: #fff;
+        border-radius: 29px;
+    }
+    &__title-h2::after {
+        content: '';
+        display: block;
+        height: 3px;
+        background: $gradient;
+        width: 38%;
+        transform: translateX(130%);
     }
 
     &__input-text {
@@ -289,17 +313,42 @@ body {
         border: 2px solid rgba(0, 0, 0, 0.452);
         border-radius: 40px;
 
-        font-family: heresy;   
+        font-family: heresy;
     }
 }
 
-.name::after {
-}
-.mail::after {
-}
-.phone::after {
+.name,
+.mail,
+.phone {
+    position: relative;
 }
 
+.name::after {
+    content: '65';
+}
+
+.mail::after {
+    content: '65';
+}
+
+.phone::before {
+    content: '65';
+}
+
+.name::after,
+.mail::after,
+.phone::before {
+    position: absolute;
+    display: block;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background: $gradient;
+    width: 20px;
+    height: 20px;
+
+}
 
 
 @media (max-width: 768px) {
@@ -310,6 +359,7 @@ body {
 
 @media (max-width: 768px) {
     body {
-/*         background-color: green;
- */    }
+        /*         background-color: green;
+ */
+    }
 }
